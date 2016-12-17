@@ -5,24 +5,24 @@ public class MyFirstProgram {
 	public static void main (String[] args) {
 		hello("world");
 
-		double len = 5;
-		System.out.println("Плошадь квадрата со стороной " + len + " = " + area(len));
+		Square s = new Square(5);
+		System.out.println("Плошадь квадрата со стороной " + s.l + " = " + s.area());
 
-		double a = 4;
-		double b = 4;
-		System.out.println("Плошадь прямоугольника со сторонами " + a + " и " + b + " = " + area(a, b));
+		Rectangle r = new Rectangle(4, 6);
+		System.out.println("Плошадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
+
+		Point p1 = new Point(1, 1);
+		Point p2 = new Point(2,2);
+		System.out.println("Расстояние между точками " + distance(p1, p2));
+
 	}
 
 	public static void hello(String somebody) {
 		System.out.println("Hello" + somebody + "!");
 	}
 
-	public static double area(double l) {
-		return l*l;
-	}
+	public static double distance(Point p1, Point p2) {
 
-	public static double area(double a, double b) {
-		return a*b;
+		return Math.sqrt(((p2.x - p1.x)* (p2.x - p1.x)) + ((p2.y - p1.y)* (p2.y - p1.y)));
 	}
-
 }
