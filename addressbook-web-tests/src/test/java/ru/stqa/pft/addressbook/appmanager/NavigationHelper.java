@@ -30,5 +30,7 @@ public class NavigationHelper extends HelperBase {
 
     public void acceptPopup() {
         wd.switchTo().alert().accept();
+        String test = "34";
+
     }
 }
