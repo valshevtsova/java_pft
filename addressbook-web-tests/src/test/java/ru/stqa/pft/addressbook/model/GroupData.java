@@ -2,16 +2,14 @@ package ru.stqa.pft.addressbook.model;
 
 public class GroupData {
     private final String name;
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     private int id;
     private final String header;
     private final String footer;
 
 
+    public void setId(int id) {
+        this.id = id;
+    }
     public int getId() {
         return id;
     }
