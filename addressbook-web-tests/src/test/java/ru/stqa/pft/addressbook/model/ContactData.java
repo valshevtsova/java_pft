@@ -7,6 +7,7 @@ public class ContactData {
     private String homephone;
     private String email;
     private int id = Integer.MAX_VALUE;
+    private int index;
     private String group;
 
 
@@ -39,8 +40,17 @@ public class ContactData {
         return id;
     }
 
+    public int getIndex() {
+        return index;
+    }
+
     public ContactData withId(int id) {
         this.id = id;
+        return this;
+    }
+
+    public ContactData withIndex(int index) {
+        this.index = index;
         return this;
     }
 
