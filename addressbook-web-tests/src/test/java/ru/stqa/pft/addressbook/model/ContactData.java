@@ -13,6 +13,7 @@ public class ContactData {
     private String email2;
     private String email3;
     private String address;
+    private String allInfo;
     private int id = Integer.MAX_VALUE;
     private int index;
     private String group;
@@ -56,6 +57,10 @@ public class ContactData {
 
     public String getAddress() {
         return address;
+    }
+
+    public String getAllInfo() {
+        return allInfo;
     }
 
     public String getGroup() {
@@ -146,6 +151,11 @@ public class ContactData {
 
     public ContactData withAddress(String address) {
         this.address = address;
+        return this;
+    }
+
+    public ContactData withAllInfo(String allInfo) {
+        this.allInfo = allInfo;
         return this;
     }
 

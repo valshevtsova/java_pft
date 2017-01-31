@@ -127,7 +127,18 @@ public class ContactHelper extends HelperBase {
                 .withHomephone(home).withMobilephone(mobile).withWorkphone(work).withEmail(email).withEmail2(email2).withtEmail3(email3).withAddress(address);
     }
 
+    public ContactData infoFromViewPage(ContactData contact) {
+        initContactViewById(contact.getId());
+        String allInfo = wd.findElement(By.id("content")).getText();
+        return  new ContactData().withAllInfo(allInfo);
+    }
+
+    private void initContactViewById(int id) {
+        wd.findElement(By.xpath(String.format("//input[@value='%s']/../../td[7]/a",id))).click();
+    }
+
     private void initContactModificationById (int id){
         wd.findElement(By.xpath(String.format("//input[@value='%s']/../../td[8]/a",id))).click();
     }
+
 }
