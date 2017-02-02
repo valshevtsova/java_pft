@@ -1,0 +1,37 @@
+[
+  {
+    "firstname": "firstname 0",
+    "lastname": "lastname 0",
+    "homephone": "+375290434535",
+    "email": "user0@1.com",
+    "address": "Minsk \n Lenina str. 2-7"
+  },
+  {
+    "firstname": "firstname 1",
+    "lastname": "lastname 1",
+    "homephone": "+375291434535",
+    "email": "user1@1.com",
+    "address": "Minsk \n Lenina str. 4-14"
+  },
+  {
+    "firstname": "firstname 2",
+    "lastname": "lastname 2",
+    "homephone": "+375292434535",
+    "email": "user2@1.com",
+    "address": "Minsk \n Lenina str. 6-21"
+  },
+  {
+    "firstname": "firstname 3",
+    "lastname": "lastname 3",
+    "homephone": "+375293434535",
+    "email": "user3@1.com",
+    "address": "Minsk \n Lenina str. 8-28"
+  },
+  {
+    "firstname": "firstname 4",
+    "lastname": "lastname 4",
+    "homephone": "+375294434535",
+    "email": "user4@1.com",
+    "address": "Minsk \n Lenina str. 10-35"
+  }
+]
