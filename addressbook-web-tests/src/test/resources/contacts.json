@@ -2,6 +2,7 @@
   {
     "firstname": "firstname 0",
     "lastname": "lastname 0",
+    "nickname": "nick0",
     "homephone": "+375290434535",
     "email": "user0@1.com",
     "address": "Minsk \n Lenina str. 2-7"
@@ -9,6 +10,7 @@
   {
     "firstname": "firstname 1",
     "lastname": "lastname 1",
+    "nickname": "nick1",
     "homephone": "+375291434535",
     "email": "user1@1.com",
     "address": "Minsk \n Lenina str. 4-14"
@@ -16,6 +18,7 @@
   {
     "firstname": "firstname 2",
     "lastname": "lastname 2",
+    "nickname": "nick2",
     "homephone": "+375292434535",
     "email": "user2@1.com",
     "address": "Minsk \n Lenina str. 6-21"
@@ -23,6 +26,7 @@
   {
     "firstname": "firstname 3",
     "lastname": "lastname 3",
+    "nickname": "nick3",
     "homephone": "+375293434535",
     "email": "user3@1.com",
     "address": "Minsk \n Lenina str. 8-28"
@@ -30,8 +34,49 @@
   {
     "firstname": "firstname 4",
     "lastname": "lastname 4",
+    "nickname": "nick4",
     "homephone": "+375294434535",
     "email": "user4@1.com",
     "address": "Minsk \n Lenina str. 10-35"
+  },
+  {
+    "firstname": "firstname 5",
+    "lastname": "lastname 5",
+    "nickname": "nick5",
+    "homephone": "+375295434535",
+    "email": "user5@1.com",
+    "address": "Minsk \n Lenina str. 12-42"
+  },
+  {
+    "firstname": "firstname 6",
+    "lastname": "lastname 6",
+    "nickname": "nick6",
+    "homephone": "+375296434535",
+    "email": "user6@1.com",
+    "address": "Minsk \n Lenina str. 14-49"
+  },
+  {
+    "firstname": "firstname 7",
+    "lastname": "lastname 7",
+    "nickname": "nick7",
+    "homephone": "+375297434535",
+    "email": "user7@1.com",
+    "address": "Minsk \n Lenina str. 16-56"
+  },
+  {
+    "firstname": "firstname 8",
+    "lastname": "lastname 8",
+    "nickname": "nick8",
+    "homephone": "+375298434535",
+    "email": "user8@1.com",
+    "address": "Minsk \n Lenina str. 18-63"
+  },
+  {
+    "firstname": "firstname 9",
+    "lastname": "lastname 9",
+    "nickname": "nick9",
+    "homephone": "+375299434535",
+    "email": "user9@1.com",
+    "address": "Minsk \n Lenina str. 20-70"
   }
 ]
