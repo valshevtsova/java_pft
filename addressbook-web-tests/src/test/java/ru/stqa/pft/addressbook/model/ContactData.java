@@ -145,19 +145,19 @@ public class ContactData {
         if (id != that.id) return false;
         if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
         if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
-        if (nickname != null ? !nickname.equals(that.nickname) : that.nickname != null) return false;
         if (homephone != null ? !homephone.equals(that.homephone) : that.homephone != null) return false;
-        return email != null ? email.equals(that.email) : that.email == null;
+        if (email != null ? !email.equals(that.email) : that.email != null) return false;
+        return groups != null ? groups.equals(that.groups) : that.groups == null;
     }
 
     @Override
     public int hashCode() {
         int result = firstname != null ? firstname.hashCode() : 0;
         result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
-        result = 31 * result + (nickname != null ? nickname.hashCode() : 0);
         result = 31 * result + (homephone != null ? homephone.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + id;
+        result = 31 * result + (groups != null ? groups.hashCode() : 0);
         return result;
     }
 
