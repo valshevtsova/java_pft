@@ -35,7 +35,7 @@ public class HttpSession {
         post.setEntity(new UrlEncodedFormEntity(params));
         CloseableHttpResponse response = httpclient.execute(post);
         String body = getTextForm(response);
-        return body.contains(String.format("/account_page.php\">%s</a>", username));
+        return body.contains(String.format("/account_page.php\">%s", username));
     }
 
     private String getTextForm (CloseableHttpResponse response) throws IOException {
