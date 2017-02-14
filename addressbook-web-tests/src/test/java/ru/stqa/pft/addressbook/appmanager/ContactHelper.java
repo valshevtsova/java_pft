@@ -156,4 +156,12 @@ public class ContactHelper extends HelperBase {
         wd.findElement(By.xpath(String.format("//input[@value='%s']/../../td[8]/a",id))).click();
     }
 
+    public void removeContactFromGroup(ContactData contact) {
+        selectContactById(contact.getId());
+        submitRemoveContactFromGroup();
+    }
+
+    private void submitRemoveContactFromGroup() {
+        click(By.name("remove"));
+    }
 }

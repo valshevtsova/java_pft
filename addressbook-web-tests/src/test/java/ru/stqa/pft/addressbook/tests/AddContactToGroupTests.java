@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.tests;
 
 import org.hamcrest.CoreMatchers;
 import org.hamcrest.MatcherAssert;
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
@@ -18,9 +19,10 @@ public class AddContactToGroupTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions () {
+        long now = System.currentTimeMillis();
         if (app.db().groups().size() == 0) {
             app.goTo().groupPage();
-            app.group().create(new GroupData().withName("test1"));
+            app.group().create(new GroupData().withName(String.format("test%s",now)));
         }
         if (app.db().contacts().size() == 0){
             app.goTo().gotoHomePage();
@@ -32,15 +34,61 @@ public class AddContactToGroupTests extends TestBase {
 
     @Test
     public void testAddContactToGroup() {
+        Boolean isContactInGroup = false;
+        GroupData currentGroup = null;
+        ContactData currentContact = null;
+
         Groups groups = app.db().groups();
-        GroupData group = groups.iterator().next();
         Contacts contacts = app.db().contacts();
-        ContactData contact = contacts.iterator().next();
+
+        for (GroupData group : groups) {
+            currentGroup = group;
+            for (ContactData contact : contacts) {
+                currentContact = contact;
+                Groups groupsForContact = contact.getGroups();
+                if (groupsForContact.size() != 0) {
+                    for (GroupData groupForContact : groupsForContact) {
+                        if (groupForContact.getId() == group.getId()) {
+                            isContactInGroup = true;
+                            break;
+                        } else {
+                            isContactInGroup = false;
+                        }
+                    }
+                } else {
+                    isContactInGroup = false;
+                }
+
+                if (isContactInGroup == false) {
+                    break;
+                }
+            }
+            if (isContactInGroup == false) {
+                break;
+            }
+        }
+
+        if (isContactInGroup == true) {
+            long now = System.currentTimeMillis();
+            GroupData newGroup = new GroupData().withName(String.format("test%s",now))
+                    .withHeader(String.format("header%s",now)).withFooter(String.format("footer%s",now));
+            app.goTo().groupPage();
+            app.group().create(newGroup);
+
+            Groups allGroups = app.db().groups();
+            int lastGroupId = allGroups.stream().mapToInt((c) -> c.getId()).max().getAsInt();
+            currentGroup = newGroup.withId(lastGroupId);
+        }
+
         app.goTo().gotoHomePage();
-        app.contact().addContactToGroup(contact, group);
+        app.contact().addContactToGroup(currentContact, currentGroup);
+        app.goTo().groupPageById(currentGroup.getId());
+
         Contacts afterContacts = app.db().contacts();
-        //contact.inGroup(group);
+
+        contacts.remove(currentContact);
+        currentContact.inGroup(currentGroup);
+        contacts.add(currentContact);
         assertThat(contacts, equalTo(afterContacts));
-        System.out.println("WWW");
     }
 }

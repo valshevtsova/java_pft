@@ -266,4 +266,9 @@ public class ContactData {
         groups.add(group);
         return this;
     }
+
+    public ContactData withoutGroup(GroupData group) {
+        groups.remove(group);
+        return this;
+    }
 }

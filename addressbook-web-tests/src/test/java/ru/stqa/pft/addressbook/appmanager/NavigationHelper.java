@@ -33,4 +33,8 @@ public class NavigationHelper extends HelperBase {
         String test = "34";
 
     }
+
+    public void groupPageById(int id) {
+        wd.get(String.format("http://localhost/addressbook/?group=%s", id));
+    }
 }
