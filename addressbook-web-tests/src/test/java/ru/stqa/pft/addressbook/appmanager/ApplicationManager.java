@@ -1,6 +1,5 @@
 package ru.stqa.pft.addressbook.appmanager;
 
-import org.apache.xpath.operations.String;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +17,7 @@ import java.net.URL;
 import java.util.Objects;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+import java.lang.String;
 
 public class ApplicationManager {
 
@@ -37,8 +37,8 @@ public class ApplicationManager {
     }
 
     public void init() throws IOException {
-        java.lang.String target = System.getProperty("target", "local");
-        properties.load(new FileReader(new File(java.lang.String.format("src/test/resources/%s.properties",target))));
+        String target = System.getProperty("target", "local");
+        properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties",target))));
         dbHelper = new DbHelper();
         if ("".equals(properties.getProperty("selenium.server"))){
             if(Objects.equals(browser, BrowserType.FIREFOX)){
