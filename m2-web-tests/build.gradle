@@ -34,6 +34,6 @@ task testCustomers(type: Test) {
     }
 }
 
-testContacts.doFirst {
+testCustomers.doFirst {
     jvmArgs "-javaagent:${configurations.agent.singleFile}"
 }
