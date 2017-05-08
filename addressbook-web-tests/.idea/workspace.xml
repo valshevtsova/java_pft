@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="670f7791-56d9-483a-bd46-5b260cd1d97c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-web-tests/build.gradle" afterPath="$PROJECT_DIR$/../m2-web-tests/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerCreationTests.java" afterPath="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerCreationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerEditTests.java" afterPath="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerEditTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -42,14 +42,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CustomerCreationTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CustomerCreationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerCreationTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerEditTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerEditTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,8 +78,20 @@
         <entry file="file://$PROJECT_DIR$/../m2-web-tests/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="116">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerDeletionTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerDeletionTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -624,7 +646,7 @@
       <map>
         <entry key="$PROJECT_DIR$" value="1492026554657" />
         <entry key="$PROJECT_DIR$/../m2-tests" value="1492026554657" />
-        <entry key="$PROJECT_DIR$/../m2-web-tests" value="1493576128122" />
+        <entry key="$PROJECT_DIR$/../m2-web-tests" value="1494267463758" />
         <entry key="$PROJECT_DIR$/../sandbox" value="1490039147163" />
       </map>
     </option>
@@ -988,11 +1010,11 @@
         <option value="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/appmanager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/../m2-web-tests/src/test/resources/local.properties" />
-        <option value="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerEditTests.java" />
         <option value="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerDeletionTests.java" />
         <option value="$PROJECT_DIR$/../m2-web-tests/src/test/resources/testing-customers.xml" />
         <option value="$PROJECT_DIR$/../m2-web-tests/build.gradle" />
         <option value="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerCreationTests.java" />
+        <option value="$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerEditTests.java" />
       </list>
     </option>
   </component>
@@ -1807,24 +1829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerEditTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerDeletionTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/resources/testing-customers.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1836,7 +1840,15 @@
     <entry file="file://$PROJECT_DIR$/../m2-web-tests/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerEditTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1844,7 +1856,17 @@
     <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerCreationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../m2-web-tests/src/test/java/ru/stqa/pft/m2/tests/CustomerDeletionTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -20,7 +20,7 @@ public class CustomerCreationTests extends TestBase {
         int before = app.getCustomerHelper().getCustomerCount();
         app.getCustomerHelper().createCustomer(
                 new CustomerData()
-                        .withEmail("Test1235767@gmail.by")
+                        .withEmail("Test12356667@gmail.by")
                         .withFirstname("Tester")
                         .withLastname("Customer"),
                         //.withGender("Male"),

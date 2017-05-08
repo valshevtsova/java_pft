@@ -12,7 +12,7 @@ public class CustomerEditTests extends TestBase {
             app.getCustomerHelper().createCustomer(new CustomerData()
                             .withFirstname("Test1")
                             .withLastname("Amasty1")
-                            .withEmail("test4@7.com"),
+                            .withEmail("test467@7.com"),
                             //.withGender("Male"),
                     true);
         }
@@ -21,7 +21,7 @@ public class CustomerEditTests extends TestBase {
         app.getCustomerHelper().fillCustomerForm(new CustomerData()
                 .withFirstname("TestEdit")
                 .withLastname("AmastyEdit")
-                .withEmail("help7Me@amasty.com"),
+                .withEmail("help7M66e@amasty.com"),
                 false);
         app.getCustomerHelper().submitCustomerCreation();
     }
