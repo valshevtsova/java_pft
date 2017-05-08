@@ -55,7 +55,8 @@ public class CustomerHelper extends HelperBase  {
     }
 
     public void selectCustomerInGrid() {
-        waitAndClick(By.xpath("//input[@id='idscheck1']"));
+        //waitAndClick(By.xpath("//input[@id='idscheck1']"));
+        waitAndClick(By.xpath("//div[2]/main/div[2]/div/div/div/div[5]/table/tbody/tr[2]/td[1]/label/input"));
     }
 
     public void initCustomerDeletion(){

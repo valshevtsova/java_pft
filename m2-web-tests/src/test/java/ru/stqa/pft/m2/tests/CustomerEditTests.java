@@ -7,12 +7,15 @@ public class CustomerEditTests extends TestBase {
     @Test
     public void testCustomerEdit() {
         //app.getNav().closeNoisePopup();
+        int a = 10000;
+        int randomNumber = (int)(Math.random() * a);
+
         app.getNav().gotoCustomerGrid();
         if (!app.getCustomerHelper().isAnyCustomerPresent()){
             app.getCustomerHelper().createCustomer(new CustomerData()
                             .withFirstname("Test1")
                             .withLastname("Amasty1")
-                            .withEmail("test467@7.com"),
+                            .withEmail("test"+randomNumber+"@7.com"),
                             //.withGender("Male"),
                     true);
         }

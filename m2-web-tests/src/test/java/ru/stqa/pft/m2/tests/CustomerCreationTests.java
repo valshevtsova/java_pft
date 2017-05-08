@@ -16,11 +16,14 @@ public class CustomerCreationTests extends TestBase {
     public void testCustomerCreation() {
 
         //app.getNav().closeNoisePopup();
+
         app.getNav().gotoCustomerGrid();
         int before = app.getCustomerHelper().getCustomerCount();
+        int a = 10000;
+        int randomNumber = (int)(Math.random() * a);
         app.getCustomerHelper().createCustomer(
                 new CustomerData()
-                        .withEmail("Test12356667@gmail.by")
+                        .withEmail("Test"+randomNumber+"@gmail.by")
                         .withFirstname("Tester")
                         .withLastname("Customer"),
                         //.withGender("Male"),
