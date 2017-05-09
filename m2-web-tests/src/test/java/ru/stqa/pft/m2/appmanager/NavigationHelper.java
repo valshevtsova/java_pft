@@ -22,4 +22,8 @@ public class NavigationHelper extends HelperBase{
             click(locator);
     }
 
+    public void gotoProductAttributesGrid() {
+        click(By.linkText("STORES"));
+        waitAndClick(By.linkText("Product"));
+    }
 }

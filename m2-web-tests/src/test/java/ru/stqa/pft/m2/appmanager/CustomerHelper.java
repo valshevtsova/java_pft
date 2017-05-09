@@ -12,9 +12,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by ruslan on 25.12.2016.
- */
+
 public class CustomerHelper extends HelperBase  {
 
     public CustomerHelper(WebDriver wd) {

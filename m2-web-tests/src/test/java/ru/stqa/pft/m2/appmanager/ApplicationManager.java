@@ -20,6 +20,7 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private CustomerHelper customerHelper;
     private NavigationHelper nav;
+    private ILNHelper ilnHelper;
     private String browser;
 
     public ApplicationManager(String browser) {
@@ -40,6 +41,7 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get(properties.getProperty("web.baseUrl"));
         customerHelper = new CustomerHelper(wd);
+        ilnHelper = new ILNHelper(wd);
         nav = new NavigationHelper(wd);
         sessionHelper = new SessionHelper(wd);
         sessionHelper.loginAdmin(properties.getProperty("web.adminLogin"), properties.getProperty("web.adminPassword"));
@@ -56,4 +58,6 @@ public class ApplicationManager {
     public CustomerHelper getCustomerHelper() {
         return customerHelper;
     }
+
+    public ILNHelper getIlnHelper() { return ilnHelper; }
 }
